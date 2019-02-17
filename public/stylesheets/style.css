@@ -1,8 +1,31 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Georgia", Helvetica, Arial, sans-serif;
 }
 
-a {
+/*a {
   color: #00B7FF;
+}*/
+
+p {
+    font-size: 1.3em;
+}
+
+nav {
+    padding: 30px;
+    background: blue;
+    border: 2px solid #999;
+}
+
+nav a {
+    padding-left: 10 px;
+    padding-right: 10px;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #999;
 }

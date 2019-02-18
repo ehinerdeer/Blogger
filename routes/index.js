@@ -1,13 +1,13 @@
 var express = require('express');
 var router = express.Router();
 var ctrlHome = require('../controller/home');
-var ctrlBlogList = require('../controller/bloglist');
-var ctrlBlogAdd = require('../controller/blogadd');
+var ctrlBlog = require('../controller/blog');
+/*var ctrlBlogAdd = require('../controller/blog');*/
 
 
 /* Setup routes to pages */
 router.get('/', ctrlHome.index); 
-router.get('/bloglist', ctrlBlogList.bloglist);
-router.get('/blogadd', ctrlBlogAdd.blogadd);
+router.get('/bloglist', ctrlBlog.bloglist);
+router.get('/blogadd', ctrlBlog.blogadd);
 
 module.exports = router;

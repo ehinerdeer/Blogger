@@ -26,3 +26,14 @@ module.exports.bloglist = function(req , res) {
 	       });
 };
 
+/*GET BLOG EDIT PAGE*/
+module.exports.blogedit = function(req , res) {
+    res.render('blogedit' , {
+	title: 'Edit Your Blog' });
+};
+
+/*GET BLOG DELETE PAGE*/
+module.exports.blogdelete = function(req , res) {
+    res.render('blogdelete', {
+	title: 'Blog Deleted' });
+}; 

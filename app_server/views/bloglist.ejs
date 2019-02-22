@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+	<link rel = 'stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+      <nav>
+	<a href="/">My Blog</a>
+	<a href="/bloglist">Blog List</a>
+	<a href="/blogadd">Add A Blog</a>
+      </nav>
+        <h1><%= title %></h1>
+	<table>
+	  <tr>
+	    <th><%= blog[0].blogTitle %></th>
+          </tr>
+	  <tr><td id="btext"><%= blog[0].blogText %></td></tr>
+	  <tr><td id="bdate"><%= blog[0].createdDate %></td></tr>
+	</table>
+	<table>
+	  <tr>
+	    <th><%= blog[1].blogTitle %></th>
+	  </tr>
+	  <tr><td id="btext"><%= blog[1].blogText %></td></tr>
+	  <tr><td id="bdate"><%= blog[1].createdDate %></td></tr>
+	</table>
+	<table>
+	  <tr>
+	    <th><%= blog[2].blogTitle %></th>
+	  </tr>
+	  <tr><td id="btext"><%= blog[2].blogText %></td></tr>
+	  <tr><td id="bdate"><%= blog[2].createdDate %></td></tr>
+	</table>
+    </body>
+</html>
+

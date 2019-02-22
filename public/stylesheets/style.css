@@ -29,3 +29,27 @@ nav a {
 nav a:hover {
     color: #999;
 }
+
+table {
+    margin: 15px;
+}
+
+th {
+    font-size: 2.0 em;
+    padding: 20px;
+    background: #00ccff;
+    border: 2px solid #333;
+    color: #fff;
+}
+
+#btext {
+    padding: 25px;
+    border: 2px solid #333;
+    font-size: 1.5 em;
+    background: #fff;
+}
+
+#bdate {
+    padding: 5px;
+    border: 2px solid #333;
+}

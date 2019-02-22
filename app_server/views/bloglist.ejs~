@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+	<link rel = 'stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+      <nav>
+	<a href="/">My Blog</a>
+	<a href="/bloglist">Blog List</a>
+	<a href="/blogadd">Add A Blog</a>
+      </nav>
+        <h1><%= title %></h1>
+	<table>
+	  <tr>
+	    <th><%= blog[0].blogTitle %></th>
+          </tr>
+	  <tr><td id="btext"><%= blog[0].blogText %></td></tr>
+	  <tr><td id="bdate"><%= blog[0].createdDate %></td></tr>
+	</table>  
+      
+      <p>This is currently under construction</p>
+    </body>
+</html>
+

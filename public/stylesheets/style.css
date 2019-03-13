@@ -1,5 +1,6 @@
 body {
   padding: 50px;
+  margin-top: 20px;
   font: 14px "Georgia", Helvetica, Arial, sans-serif;
 }
 
@@ -11,7 +12,7 @@ p {
     font-size: 1.3em;
 }
 
-nav {
+/*nav {
     padding: 30px;
     background: blue;
     border: 2px solid #999;
@@ -29,6 +30,11 @@ nav a {
 nav a:hover {
     color: #999;
 }
+*/
+
+nav {
+    margin-bottom: 20px;
+}
 
 table {
     margin: 15px;
@@ -37,19 +43,19 @@ table {
 th {
     font-size: 2.0 em;
     padding: 20px;
-    background: #00ccff;
+    background: #343a40!important;
     border: 2px solid #333;
     color: #fff;
 }
 
 #btext {
     padding: 25px;
-    border: 2px solid #333;
+    border: 2px solid #343a40!important;
     font-size: 1.5 em;
     background: #fff;
 }
 
 #bdate {
     padding: 5px;
-    border: 2px solid #333;
+    border: 2px solid #343a40!important;
 }

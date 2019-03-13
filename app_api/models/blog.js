@@ -1,12 +1,12 @@
 var mongoose = require('mongoose');
 
 var blogschema = new mongoose.Schema({
-    blog-title: String,
-    blog-text: String,
-    created-date: {
+    blogTitle: String,
+    blogText: String,
+    createdDate: {
 	type: Date,
 	"default": Date.now
     }
 });
 
-mongoose.model('My Blog' , blogschema);
+mongoose.model('myblog' , blogschema);

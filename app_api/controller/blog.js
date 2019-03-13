@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var blogSchema = mongoose.model('myblog');
+var blogSch = mongoose.model('myblog');
 
 var sendJsonResponse = function(res, status, content) {
     res.status(status);
@@ -7,7 +7,35 @@ var sendJsonResponse = function(res, status, content) {
 }
 
 module.exports.blogList = function(req, res) {
-    sendJsonResponse(res, 200, {"status" : "success"});
+    console.log('Getting locations list');
+    blogSch
+	.find()
+	.exec(function(err, results) {
+	    if(!results) {
+		sendJsonResponse(res, 404 , {
+		    "message" : "No blogs found!"
+		});
+		return;
+	    }else if(err) {
+		console.log(err);
+		sendJsonResponse(res, 404, err);
+		return;
+	    }
+	    console.log(results);
+            sendJsonResponse(res, 200, buildBlogList(req, res, results)));
+			    });
+};
+
+var buildBlogList = function(req, res, results) {
+    var blogs = [];
+    results.forEach(function obj) {
+	blogs.push({
+	    blogTitle : obj.blogTitle,
+	    blogText : obj.blogText,
+	    createdDate : obj.createdDate
+	});
+    });
+    return blogs;
 };
 
 module.exports.addOne = function(req, res) {
@@ -15,13 +43,59 @@ module.exports.addOne = function(req, res) {
 };
 
 module.exports.readOne = function(req, res) {
-    sendJsonResponse(res, 200, {"status" : "success"});
+    console.log('Finding blogs'), req.params);
+if(req.params && req.params.blogid){
+    blogSch
+	.findByID(req.params.blogid)
+	.exec(function(err, blog) {
+	    if(!blog){
+		sendJsonResponse(res, 404, {
+		    "message": "blogid not found"
+		});
+		return;
+	    }else if(err) {
+		console.log(err);
+		sendJsonResponse (res, 404, err);
+		return;
+	    }
+	    console.log(blog);
+	    sendJsonResponse(res, 200, blog);
+	});
+} else {
+    console.log('No blogid in request');
+    sendJsonResponse(res, 404, { "message" : "No blogid in request"
+			       });
+}
 };
 
 module.exports.editOne = function(req, res) {
-    sendJsonResponse(res, 200, {"status" : "success"});
+    console.log("Updating Blog Entry : " + req.params.id);
+    console.log(req.body);
+    blogSch
+	.findOneAndUpdate(
+	    { _id: req.params.id },
+	    { $set: {"blogTitle" : req.body.blogTitle }},
+            { $set: {"blogText" : req.body.blogText }}
+	    function(err, response) {
+		if(err) {
+		    sendJsonResponse(res, 400, err);
+		} else {
+		    sendJsonResponse(res, 201, response);
+		}
+	    });
 };
 
 module.exports.deleteOne = function(req, res) {
-    sendJsonResponse(res, 200, {"status" : "success"});
+    console.log("Deleting blog entry id : " + req.params.id);
+    console.log(req.body);
+    blogSch
+        .findByIdAndRemove(req.params.id)
+	.exec(
+	    function(err, response) {
+		if(err) {
+		    sendJsonResponse(res, 404, err);
+		} else {
+		    sendJsonResponse(res, 204, null);
+		}
+	    });
 };

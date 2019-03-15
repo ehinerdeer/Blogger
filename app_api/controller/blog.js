@@ -22,13 +22,13 @@ module.exports.blogList = function(req, res) {
 		return;
 	    }
 	    console.log(results);
-            sendJsonResponse(res, 200, buildBlogList(req, res, results)));
+            sendJsonResponse(res, 200, buildBlogList(req, res, results));
 			    });
 };
 
 var buildBlogList = function(req, res, results) {
     var blogs = [];
-    results.forEach(function obj) {
+    results.forEach(function (obj) {
 	blogs.push({
 	    blogTitle : obj.blogTitle,
 	    blogText : obj.blogText,
@@ -43,7 +43,7 @@ module.exports.addOne = function(req, res) {
 };
 
 module.exports.readOne = function(req, res) {
-    console.log('Finding blogs'), req.params);
+    console.log('Finding blogs', req.params);
 if(req.params && req.params.blogid){
     blogSch
 	.findByID(req.params.blogid)
@@ -76,13 +76,14 @@ module.exports.editOne = function(req, res) {
 	    { _id: req.params.id },
 	    { $set: {"blogTitle" : req.body.blogTitle }},
             { $set: {"blogText" : req.body.blogText }}
-	    function(err, response) {
+	   /* function(err, response) {
 		if(err) {
 		    sendJsonResponse(res, 400, err);
 		} else {
 		    sendJsonResponse(res, 201, response);
-		}
-	    });
+		}*/
+	    // }
+	);
 };
 
 module.exports.deleteOne = function(req, res) {

@@ -7,7 +7,7 @@ var sendJsonResponse = function(res, status, content) {
 }
 
 module.exports.blogList = function(req, res) {
-    console.log('Getting locations list');
+    console.log('Getting blog list');
     blogSch
 	.find()
 	.exec(function(err, results) {
@@ -39,7 +39,22 @@ var buildBlogList = function(req, res, results) {
 };
 
 module.exports.addOne = function(req, res) {
-    sendJsonResponse(res, 200, {"status" : "success"});
+    console.log(req.body);
+    blogSch
+	.create({
+	    blogTitle: req.body.blogTitle1,
+	    blogText: req.body.blogText1,
+	    function(err, blog) {
+		if(err) {
+		    console.log(err);
+		    sendJsonResponse(res,400,err);
+		} else {
+		    console.log(blog);
+		    sendJsonResponse(res,201,blog);
+		}
+	    }
+	}
+	       );
 };
 
 module.exports.readOne = function(req, res) {
@@ -75,14 +90,14 @@ module.exports.editOne = function(req, res) {
 	.findOneAndUpdate(
 	    { _id: req.params.id },
 	    { $set: {"blogTitle" : req.body.blogTitle }},
-            { $set: {"blogText" : req.body.blogText }}
-	   /* function(err, response) {
+            { $set: {"blogText" : req.body.blogText }},
+	    function(err, response) {
 		if(err) {
 		    sendJsonResponse(res, 400, err);
 		} else {
 		    sendJsonResponse(res, 201, response);
-		}*/
-	    // }
+		}
+	     }
 	);
 };
 

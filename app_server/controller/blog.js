@@ -63,7 +63,7 @@ var _showError = function(req, res, status) {
 };
 
 /*GET BLOG LIST PAGE */
-module.exports.bloglist = function(req , res) {
+module.exports.blogList = function(req , res) {
     var requestOptions, path;
     path = '/api/blog';
     requestOptions = {
@@ -86,7 +86,7 @@ var renderBlogList = function(req, res, responseBody) {
 	pageHeader : {
 	    title: 'Blog List'
 	},
-	blogs: responseBody
+	blog: responseBody
     });
 };
 	/* OLD STATIC BLOG
@@ -109,13 +109,13 @@ var renderBlogList = function(req, res, responseBody) {
 
 
 /*GET BLOG EDIT PAGE*/
-module.exports.edit = function(req , res) {
+module.exports.readOne = function(req , res) {
     var requestOptions, path;
     path = "/api/blog/" + req.params.id;
     requestOptions = {
 	url : apiOptions.server + path,
 	method : "GET",
-	json {}
+	json : {}
     };
     request(
 	requestOptions,
@@ -203,7 +203,7 @@ module.exports.deletePost = function(req, res) {
     path = '/api/blog/' + id;
 
     requestOptions = {
-	url : apiOptions.server + path;
+	url : apiOptions.server + path,
 	method : "DELETE",
 	json : {}
     };

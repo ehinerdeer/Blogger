@@ -35,7 +35,7 @@ module.exports.addBlog = function(req , res) {
 	requestOptions,
 	function(err, response, body) {
 	    if(response.statusCode === 201) {
-		res.redirect('/blogList');
+		res.redirect('/bloglist');
 	    } else {
 		_showError(req, res, response.statusCode);
 	    }
@@ -89,7 +89,7 @@ var renderBlogList = function(req, res, responseBody) {
 	blog: responseBody
     });
 };
-	/* OLD STATIC BLOG
+	/* OLD STATIC BLOG*/
 
 	blog: [{
 	           blogTitle: 'My First Blog',
@@ -105,7 +105,7 @@ var renderBlogList = function(req, res, responseBody) {
                    blogTitle: 'My Third Blog',
 		   blogText: 'This is my third blog',
 		   createdDate: new Date("2019-02-18")
-	       }]*/
+	       }]
 
 
 /*GET BLOG EDIT PAGE*/
@@ -127,7 +127,7 @@ module.exports.readOne = function(req , res) {
 
 /*Render BLOG EDIT PAGE */
 var renderBlogEdit = function(req, res, responseBody) {
-    res.render('blogEdit' , {
+    res.render('blogedit' , {
 	title: 'Blog Info',
 	pageHeader: {
 	    title: 'Blog Info'
@@ -155,7 +155,7 @@ module.exports.editPost = function(req, res) {
 	requestOptions,
 	function(err, response, body) {
 	    if(response.statusCode === 201) {
-		res.redirect('/blogList');
+		res.redirect('/bloglist');
 	    } else {
 		_showError(req, res, response.statusCode);
 	    }
@@ -187,7 +187,7 @@ module.exports.del = function(req, res) {
 
 /*RENDER DELETE PAGE */
 var renderDeletePage = function(req, res, responseBody) {
-    res.render('blogDelete', {
+    res.render('blogdelete', {
 	title : 'Delete Blog',
 	pageHeader: {
 	    title : 'Delete Blog'
@@ -212,7 +212,7 @@ module.exports.deletePost = function(req, res) {
 	requestOptions,
 	function(err, response, body) {
 	    if(response.statusCode === 204) {
-		res.redirect('/blogList');
+		res.redirect('/bloglist');
 	    } else {
 		_showError(req, res, response.statusCode);
 	    }

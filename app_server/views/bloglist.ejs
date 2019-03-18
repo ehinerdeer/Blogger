@@ -23,33 +23,28 @@
 	</li>
     </nav>
         <h1><%= title %></h1>
-	<table>
-	  <tr>
-	    <th><%= blog[0].blogTitle %></th>
-          </tr>
-	  <tr><td id="btext"><%= blog[0].blogText %></td></tr>
-	  <tr><td id="bdate"><%= blog[0].createdDate %></td></tr>
-	  <tr><td><button onclick="href='/blogedit';">Edit</button></td>
-	      <td><button onclick="href='/blogdelete';">Delete</button></tr>
-	</table>
-	<table>
-	  <tr>
-	    <th><%= blog[1].blogTitle %></th>
-	  </tr>
-	  <tr><td id="btext"><%= blog[1].blogText %></td></tr>
-	  <tr><td id="bdate"><%= blog[1].createdDate %></td></tr>
-          <td><button onclick="href='/blogedit';">Edit</button></td>
-	  <td> <button onclick="href='/blogdelete';">Delete</button></tr>
-	</table>
-	<table>
-	  <tr>
-	    <th><%= blog[2].blogTitle %></th>
-	  </tr>
-	  <tr><td id="btext"><%= blog[2].blogText %></td></tr>
-	  <tr><td id="bdate"><%= blog[2].createdDate %></td></tr>
-	  <td><button onclick="href='/blogedit';">Edit</button></td>
-	  <td> <button onclick="href='/blogdelete';">Delete</button></tr>
-	</table>
+	<div class="container">
+	  <% let blogs = {}; %>
+	  <% if (blog.length == 0) { %>
+	  <h4>No Blogs to display! Add one above!</h4>
+	  <% } else { %>
+	    <% for(let i = 0; i < blog.length; i++) {
+		<div class="card border-dark" style="width: 50%">
+		  <div class="card-header">
+		    <div class="row">
+		      <div class="col-sm">
+			<h4>blog[i].blogTitle</h4>
+		      </div>
+		      <div class="card-body">
+		      <div class="col-sm">
+			<p>blog[i].blogText</p>
+</div>
+</div>
+<div class="card-footer">
+  <p>blog[i].createdDate</p>
+  </div>
+</div>
+</div>%>%>				    
   </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-\

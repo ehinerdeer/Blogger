@@ -23,7 +23,18 @@
 	</li>
     </nav>	
         <h1><%= title %></h1>
-	<p>This is currently under construction</p>
+	<div class="card" style="width: 50%">
+	  <form method="post" action="/blog/blogadd/" style="padding: 20px">
+	    <div class="form-group">
+	      <label for="blogTitle" class="text-dark">Blog Title</label>
+	      <input class="form-control" id="blogTitle" name="blogTitle"></textarea>
+<label for="blogText" class="text-dark">Blog Text</label>
+<textarea class="form-control" id="blogText" rows="3" name="blogText"></textarea>
+</div>
+<input type="submit" class="btn btn-primary" value="Save">
+</form>
+</div>
+</div>
   </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-\

@@ -489,3 +489,123 @@ Mongoose is Connected to mongodb://localhost/blogger
 [0mGET / [32m200 [0m0.756 ms - 389[0m
 [0mGET / [32m200 [0m0.721 ms - 389[0m
 [0mGET / [32m200 [0m0.697 ms - 389[0m
+
+> blogger@0.0.0 start /home/bitnami/lab4
+> node ./bin/www
+
+(node:11915) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose is Connected to mongodb://tasks:tasks@localhost:27017/?authMechanism=SCRAM-SHA-1&authSource=tasks
+[0mGET /blogadd [36m304 [0m11.531 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.381 ms - -[0m
+[0mGET / [36m304 [0m1.780 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.375 ms - -[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m22.392 ms - 29[0m
+[0mGET /bloglist [31m500 [0m39.669 ms - 1647[0m
+[0mGET /blogadd [36m304 [0m1.064 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.369 ms - -[0m
+[0mGET /blogadd [36m304 [0m1.043 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.277 ms - -[0m
+[0mGET / [36m304 [0m1.158 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.278 ms - -[0m
+[0mGET /blogadd [36m304 [0m1.312 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.281 ms - -[0m
+[0mGET / [36m304 [0m0.821 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.272 ms - -[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m2.539 ms - 29[0m
+[0mGET /bloglist [31m500 [0m7.648 ms - 1647[0m
+Killed
+npm ERR! code ELIFECYCLE
+npm ERR! errno 137
+npm ERR! blogger@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 137
+npm ERR! 
+npm ERR! Failed at the blogger@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/bitnami/.npm/_logs/2019-03-18T01_37_01_565Z-debug.log
+
+> blogger@0.0.0 start /home/bitnami/lab4
+> node ./bin/www
+
+(node:12311) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose is Connected to mongodb://tasks:tasks@localhost:27017/?authMechanism=SCRAM-SHA-1&authSource=tasks
+[0mGET /blogadd [36m304 [0m11.790 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.605 ms - -[0m
+[0mGET /blogadd [36m304 [0m1.560 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.397 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.867 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.264 ms - -[0m
+[0mGET / [32m200 [0m68.067 ms - 1678[0m
+[0mGET /stylesheets/style.css [32m200 [0m5.180 ms - 806[0m
+[0mGET /favicon.ico [33m404 [0m4.634 ms - 1411[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m95.702 ms - 29[0m
+[0mGET /bloglist [31m500 [0m130.781 ms - 1647[0m
+[0mGET /blogadd [32m200 [0m1.606 ms - 2064[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.637 ms - -[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m2.468 ms - 29[0m
+[0mGET /bloglist [31m500 [0m7.412 ms - 1647[0m
+[0mGET /?fbclid=IwAR2zhc22qy5qjIMRHOMGAr2-GscXxj0ZflEkBCm9Ev4rx4CZhZbt92MtYt4 [32m200 [0m1.035 ms - 1678[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.258 ms - 806[0m
+[0mGET /favicon.ico [33m404 [0m0.945 ms - 1411[0m
+[0mGET / [32m200 [0m0.777 ms - 1678[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.335 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.910 ms - 1411[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m1.553 ms - 29[0m
+[0mGET /bloglist [31m500 [0m5.060 ms - 1647[0m
+[0mGET /blogadd [32m200 [0m0.787 ms - 2064[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.263 ms - -[0m
+{ blogTitle: 'test', blogText: 'test' }
+(node:12311) UnhandledPromiseRejectionWarning: MongoError: not authorized on admin to execute command { insert: "myblogs", ordered: true, lsid: { id: UUID("f6825c22-aff9-4598-923d-129c4488ec94") }, $db: "admin" }
+    at /home/bitnami/lab4/node_modules/mongodb-core/lib/connection/pool.js:581:63
+    at authenticateStragglers (/home/bitnami/lab4/node_modules/mongodb-core/lib/connection/pool.js:504:16)
+    at Connection.messageHandler (/home/bitnami/lab4/node_modules/mongodb-core/lib/connection/pool.js:540:5)
+    at emitMessageHandler (/home/bitnami/lab4/node_modules/mongodb-core/lib/connection/connection.js:310:10)
+    at Socket.<anonymous> (/home/bitnami/lab4/node_modules/mongodb-core/lib/connection/connection.js:453:17)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:597:20)
+(node:12311) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:12311) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[0mPOST /blog/blogadd/ [0m- [0m- ms - -[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m1.627 ms - 29[0m
+Finding blogs { blogid: '1234' }
+[0mGET /api/blog/1234 [31m500 [0m1.680 ms - 1538[0m
+[0mPOST /api/blog/ [0m- [0m- ms - -[0m
+/home/bitnami/lab4/app_server/controller/blog.js:37
+	    if(response.statusCode === 201) {
+	                ^
+
+TypeError: Cannot read property 'statusCode' of undefined
+    at Request._callback (/home/bitnami/lab4/app_server/controller/blog.js:37:18)
+    at self.callback (/home/bitnami/lab4/node_modules/request/request.js:185:22)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at Request.onRequestError (/home/bitnami/lab4/node_modules/request/request.js:881:8)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at Socket.socketOnEnd (_http_client.js:423:9)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! blogger@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the blogger@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/bitnami/.npm/_logs/2019-03-18T14_59_41_888Z-debug.log

@@ -61,7 +61,7 @@ module.exports.readOne = function(req, res) {
     console.log('Finding blogs', req.params);
 if(req.params && req.params.blogid){
     blogSch
-	.findByID(req.params.blogid)
+	.findById(req.params.blogid)
 	.exec(function(err, blog) {
 	    if(!blog){
 		sendJsonResponse(res, 404, {

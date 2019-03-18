@@ -1,11 +1,6 @@
 /*REQUEST */
 var request = require('request');
-var apiOptions = {
-    server : "http://3.91.187.239"
-};
-
-/*
-
+var apiOptions = 'mongodb://tasks:tasks@localhost:27017/tasks';
 
 /* Blog List */
     
@@ -27,7 +22,7 @@ module.exports.addBlog = function(req , res) {
     };
 
     requestOptions = {
-	url : apiOptions.server + path,
+	url : apiOptions + path,
 	method : "POST",
 	json : postdata
     };
@@ -67,7 +62,7 @@ module.exports.blogList = function(req , res) {
     var requestOptions, path;
     path = '/api/blog';
     requestOptions = {
-	url : apiOptions.server + path,
+	url : apiOptions + path,
 	method : "GET",
 	json : {},
 	qs : {}
@@ -79,6 +74,7 @@ module.exports.blogList = function(req , res) {
 	}
     );
 };
+
 /*Render Blog List Page*/
 var renderBlogList = function(req, res, responseBody) {
     res.render('bloglist' , {
@@ -86,34 +82,16 @@ var renderBlogList = function(req, res, responseBody) {
 	pageHeader : {
 	    title: 'Blog List'
 	},
-	blog: responseBody
+	blogs: responseBody
     });
 };
-	/* OLD STATIC BLOG*/
-
-	blog: [{
-	           blogTitle: 'My First Blog',
-	           blogText: 'This is my first blog. Hopefully this works.',
-                   createdDate: new Date("2019-02-18")
-	       },
-               {
-		   blogTitle: 'My Second Blog',
-		   blogText: 'This is my second blog',
-                   createdDate: new Date("2019-02-18")
-	       },
-	       {
-                   blogTitle: 'My Third Blog',
-		   blogText: 'This is my third blog',
-		   createdDate: new Date("2019-02-18")
-	       }]
-
 
 /*GET BLOG EDIT PAGE*/
 module.exports.readOne = function(req , res) {
     var requestOptions, path;
     path = "/api/blog/" + req.params.id;
     requestOptions = {
-	url : apiOptions.server + path,
+	url : apiOptions + path,
 	method : "GET",
 	json : {}
     };
@@ -147,7 +125,7 @@ module.exports.editPost = function(req, res) {
     };
 
     requestOptions = {
-	url : apiOptions.server + path,
+	url : apiOptions + path,
 	method : "PUT",
 	json : postdata
     };
@@ -173,7 +151,7 @@ module.exports.del = function(req, res) {
     var requestOptions, path;
     path = '/api/blog/' + req.params.id;
     requestOptions = {
-	url : apiOptions.server + path,
+	url : apiOptions + path,
 	method : "GET",
 	json : {}
     };
@@ -203,7 +181,7 @@ module.exports.deletePost = function(req, res) {
     path = '/api/blog/' + id;
 
     requestOptions = {
-	url : apiOptions.server + path,
+	url : apiOptions + path,
 	method : "DELETE",
 	json : {}
     };

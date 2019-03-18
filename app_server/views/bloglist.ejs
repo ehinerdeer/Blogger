@@ -22,29 +22,25 @@
 	  <a class = "nav-link" href="/blogadd">Add A Blog</a>
 	</li>
     </nav>
-        <h1><%= title %></h1>
+    <h1><%= title %></h1>
 	<div class="container">
-	  <% let blogs = {}; %>
-	  <% if (blog.length == 0) { %>
-	  <h4>No Blogs to display! Add one above!</h4>
-	  <% } else { %>
-	    <% for(let i = 0; i < blog.length; i++) {
-		<div class="card border-dark" style="width: 50%">
+	  <% blogs.forEach(function(blog) { %>
+	     <div class="card border-dark" style="width: 50%">
 		  <div class="card-header">
 		    <div class="row">
 		      <div class="col-sm">
-			<h4>blog[i].blogTitle</h4>
+			<h4><% blog.blogTitle %></h4>
 		      </div>
 		      <div class="card-body">
 		      <div class="col-sm">
-			<p>blog[i].blogText</p>
-</div>
-</div>
-<div class="card-footer">
-  <p>blog[i].createdDate</p>
-  </div>
-</div>
-</div>%>%>				    
+			<p><% blog.blogText %></p>
+                      </div>
+                      </div>
+                   <div class="card-footer">
+                      <p><% blog.createdDate %></p>
+                   </div>
+                 </div>
+           </div> <% }); %>				    
   </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-\

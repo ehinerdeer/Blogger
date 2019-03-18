@@ -9,7 +9,7 @@ var ctrlBlog = require('../controller/blog');
 router.get('/', ctrlHome.index); 
 router.get('/bloglist', ctrlBlog.blogList);
 router.get('/blogadd', ctrlBlog.blogadd);
-router.post('/blog/blogadd/', ctrlBlog.addBlog);
+router.post('/blogadd', ctrlBlog.addBlog);
 router.get('/blogedit/:blogid', ctrlBlog.readOne);
 router.put('/blogedit/:blogid', ctrlBlog.editPost);
 router.delete('/blogdelete/:blogid', ctrlBlog.deletePost);

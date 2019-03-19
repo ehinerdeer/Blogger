@@ -1,9 +1,8 @@
 /*REQUEST */
 var request = require('request');
-var apiOptions = 'mongodb://tasks:tasks@localhost:27017/tasks';
-
-/* Blog List */
-    
+var apiOptions = {
+    server: 'http://3.91.187.239'
+}
 
 /* GET BLOG ADD PAGE */
 module.exports.blogadd = function(req , res) {
@@ -22,7 +21,7 @@ module.exports.addBlog = function(req , res) {
     };
 
     requestOptions = {
-	url : apiOptions + path,
+	url : apiOptions.server + path,
 	method : "POST",
 	json : postdata
     };
@@ -62,15 +61,22 @@ module.exports.blogList = function(req , res) {
     var requestOptions, path;
     path = '/api/blog';
     requestOptions = {
-	url : apiOptions + path,
+	url : apiOptions.server + path,
 	method : "GET",
 	json : {},
-	qs : {}
+        qs : {}
     };
     request(
 	requestOptions,
 	function(err, response, body) {
-	    renderBlogList(req, res, body);
+	    if(err){
+		console.log(err);
+	    } else if (response.statusCode === 200) {
+		console.log("Blogs Found: " + body.length);
+	        renderBlogList(req, res, body);
+	    } else {
+		console.log(response.statusCode);
+	    }
 	}
     );
 };
@@ -79,9 +85,7 @@ module.exports.blogList = function(req , res) {
 var renderBlogList = function(req, res, responseBody) {
     res.render('bloglist' , {
 	title : 'Blog List',
-	pageHeader : {
-	    title: 'Blog List'
-	},
+	pageHeader : 'Blog List',
 	blogs: responseBody
     });
 };
@@ -91,7 +95,7 @@ module.exports.readOne = function(req , res) {
     var requestOptions, path;
     path = "/api/blog/" + req.params.id;
     requestOptions = {
-	url : apiOptions + path,
+	url : apiOptions.server + path,
 	method : "GET",
 	json : {}
     };
@@ -125,7 +129,7 @@ module.exports.editPost = function(req, res) {
     };
 
     requestOptions = {
-	url : apiOptions + path,
+	url : apiOptions.server + path,
 	method : "PUT",
 	json : postdata
     };
@@ -151,7 +155,7 @@ module.exports.del = function(req, res) {
     var requestOptions, path;
     path = '/api/blog/' + req.params.id;
     requestOptions = {
-	url : apiOptions + path,
+	url : apiOptions.server + path,
 	method : "GET",
 	json : {}
     };
@@ -181,7 +185,7 @@ module.exports.deletePost = function(req, res) {
     path = '/api/blog/' + id;
 
     requestOptions = {
-	url : apiOptions + path,
+	url : apiOptions.server + path,
 	method : "DELETE",
 	json : {}
     };

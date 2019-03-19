@@ -23,21 +23,22 @@
 	</li>
     </nav>
     <h1><%= title %></h1>
-	<div class="container">
-	  <% blogs.forEach(function(blog) { %>
+    <div class="container">
+      <% let blog = {}; %>
+      <% blogs.forEach(function(blog) { %>
 	     <div class="card border-dark" style="width: 50%">
 		  <div class="card-header">
 		    <div class="row">
 		      <div class="col-sm">
-			<h4><% blog.blogTitle %></h4>
+			<h4><%= blogs.blogTitle %></h4>
 		      </div>
 		      <div class="card-body">
 		      <div class="col-sm">
-			<p><% blog.blogText %></p>
+			<p><%= blogs.blogText %></p>
                       </div>
                       </div>
                    <div class="card-footer">
-                      <p><% blog.createdDate %></p>
+                      <p><%= blog.createdDate %></p>
                    </div>
                  </div>
            </div> <% }); %>				    

@@ -13,11 +13,11 @@ module.exports.blogadd = function(req , res) {
 /* ADD BLOG PAGE */
 module.exports.addBlog = function(req , res) {
     var requestOptions, path , postdata;
-    path = '/api/blog/';
+    path = '/api/blog';
     postdata = {
 	blogTitle: req.body.blogTitle,
 	blogText: req.body.blogText,
-	createdDate: Date.now
+	createdDate: Date.now()
     };
 
     requestOptions = {

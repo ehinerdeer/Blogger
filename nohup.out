@@ -895,3 +895,102 @@ Blogs Found: 10
 [0mGET /blogadd [32m200 [0m1.052 ms - 2181[0m
 [0mGET /stylesheets/style.css [32m200 [0m0.460 ms - 806[0m
 [0mGET /stylesheets/style.css [32m200 [0m0.532 ms - 806[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.530 ms - 806[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.592 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [32m200 [0m6.936 ms - 10508[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.399 ms - -[0m
+[0mGET / [32m200 [0m0.784 ms - 1678[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.350 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.372 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m2.240 ms - 83[0m
+200
+[0mGET /blogedit/5c8ffb2bf27420400934fa86 [32m200 [0m5.396 ms - 2160[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.261 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.650 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m7.032 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.256 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m2.216 ms - 83[0m
+[0mGET /blogdelete/5c8ffb2bf27420400934fa86 [32m200 [0m6.735 ms - 2161[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.320 ms - -[0m
+[0mGET /blogadd [32m200 [0m0.824 ms - 2181[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.254 ms - -[0m

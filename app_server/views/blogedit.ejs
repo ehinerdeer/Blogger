@@ -25,7 +25,7 @@
     <body>
         <h1><%= title %></h1>
 	<div class="card">
-	  <form method="put" action="/blogedit/<%= blogData.blogid %>" style="padding: 20px;">
+	  <form method="post" action="/blogedit/<%= blogData._id %>" style="padding: 20px;">
 	    <div class="form-group">
 	      <label for="blogTitle"  class="text-dark">
 		Blog Title
@@ -35,9 +35,10 @@
               <label for="blogText" class="text-dark" style="width: 100%;">
 		Blog Text
 	      </label>
-	      <input class="form-control" id="blogText" name="blogText" value="<%= blogData.blogText %>"></textarea>
+	      <textarea class="form-control" id="blogText" name="blogText" rows="5" value="<%= blogData.blogText %>"></textarea>
                </div>
                <input type="submit" class="btn btn-dark" value="Save">
+               
                </div>
                </form>
     </body>

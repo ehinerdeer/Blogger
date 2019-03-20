@@ -44,7 +44,8 @@ module.exports.addOne = function(req, res) {
     blogSch
 	.create({
 	    blogTitle: req.body.blogTitle,
-	    blogText: req.body.blogText,
+	    blogText: req.body.blogText
+	},
 	    function(err, blog) {
 		if(err) {
 		    console.log(err);
@@ -53,9 +54,8 @@ module.exports.addOne = function(req, res) {
 		    console.log(blog);
 		    sendJsonResponse(res,201,blog);
 		}
-	    }
-	}
-	       );
+	    });
+	       
 };
 
 module.exports.readOne = function(req, res) {
@@ -92,13 +92,14 @@ module.exports.editOne = function(req, res) {
 	    { _id: req.params.blogid },
 	    { $set: {"blogTitle" : req.body.blogTitle }},
             { $set: {"blogText" : req.body.blogText }},
+	
 	    function(err, response) {
 		if(err) {
 		    sendJsonResponse(res, 400, err);
 		} else {
 		    sendJsonResponse(res, 201, response);
 		}
-	     }
+	    }
 	);
 };
 

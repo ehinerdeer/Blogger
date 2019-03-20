@@ -50,11 +50,8 @@ var _showError = function(req, res, status) {
 	content = "Something has happened, Sorry!";
     }
     res.status(status);
-    res.render('errorPage', {
-        title : title,
-        content : content
-    });
 };
+
 
 /*GET BLOG LIST PAGE */
 module.exports.blogList = function(req , res) {
@@ -143,7 +140,7 @@ module.exports.editPost = function(req, res) {
     request(
 	requestOptions,
 	function(err, response, body) {
-	    if(response.statusCode === 201) {
+	    if(!err && response.statusCode === 201) {
 		res.redirect('/bloglist');
 	    } else {
 		_showError(req, res, response.statusCode);
@@ -157,7 +154,7 @@ module.exports.editPost = function(req, res) {
 	title: 'Edit Your Blog' });
 };*/
 
-/*BLOG DELETE*/
+/* GET BLOG TO  DELETE*/
 module.exports.del = function(req, res) {
     var requestOptions, path;
     path = '/api/blog/' + req.params.blogid;
@@ -169,27 +166,28 @@ module.exports.del = function(req, res) {
     request(
 	requestOptions,
 	function(err, response, body) {
+            console.log(body);
 	    renderDeletePage(req, res, body);
+	
 	}
     );
 };
 
 /*RENDER DELETE PAGE */
-var renderDeletePage = function(req, res, responseBody) {
+var renderDeletePage = function(req, res, blogData) {
     res.render('blogdelete', {
 	title : 'Delete Blog',
-	pageHeader: {
-	    title : 'Delete Blog'
-	},
-	blogData: responseBody,
+	blogData: blogData,
 	blogid: blogData._id,
+	blogText: blogData.blogText,
+	blogTitle: blogData.blogTitle
     });
 };
 
 /*BLOG DELETE POST*/
 module.exports.deletePost = function(req, res) {
     var requestOptions, path , postdata;
-    var is = req.params.id;
+    var id = req.params.blogid;
     path = '/api/blog/' + id;
 
     requestOptions = {

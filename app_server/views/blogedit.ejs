@@ -25,16 +25,21 @@
     <body>
         <h1><%= title %></h1>
 	<div class="card">
-	  <form method="post" action="/blog/<&=id%>">
+	  <form method="post" action="/blogedit/<%= blogData.blogid %>" style="padding: 20px;">
 	    <div class="form-group">
-	      <label for="blogTitle"  class="text-dark">Blog Title</label>
-	      <input class="form-control" id="blogTitle" name="blogTitle" value="<%blog.blogTitle%>"</textarea>
-		     <label for="blogText" class="text-dark">Blog Text</label>
-		     <input class="form-control" id="blogText" name="blogText" value="<%blog.blogText%>"></textarea>
-</div>
-</div>
-<input type="submit" class="btn btn-dark" value="edit">
-</form>
+	      <label for="blogTitle"  class="text-dark">
+		Blog Title
+	      </label>
+	      <input class="form-control"  id="blogTitle" name="blogTitle" value="<%= blogData.blogTitle %>">
+   
+              <label for="blogText" class="text-dark" style="width: 100%;">
+		Blog Text
+	      </label>
+	      <input class="form-control" id="blogText" name="blogText" value="<%= blogData.blogText %>"></textarea>
+               </div>
+               <input type="submit" class="btn btn-dark" value="Save">
+               </div>
+               </form>
     </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-\

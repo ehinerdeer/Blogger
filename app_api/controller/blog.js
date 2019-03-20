@@ -84,11 +84,11 @@ if(req.params && req.params.blogid){
 };
 
 module.exports.editOne = function(req, res) {
-    console.log("Updating Blog Entry : " + req.params.id);
+    console.log("Updating Blog Entry : " + req.params.blogid);
     console.log(req.body);
     blogSch
 	.findOneAndUpdate(
-	    { _id: req.params.id },
+	    { _id: req.params.blogid },
 	    { $set: {"blogTitle" : req.body.blogTitle }},
             { $set: {"blogText" : req.body.blogText }},
 	    function(err, response) {
@@ -102,10 +102,10 @@ module.exports.editOne = function(req, res) {
 };
 
 module.exports.deleteOne = function(req, res) {
-    console.log("Deleting blog entry id : " + req.params.id);
+    console.log("Deleting blog entry id : " + req.params.blogid);
     console.log(req.body);
     blogSch
-        .findByIdAndRemove(req.params.id)
+        .findByIdAndRemove(req.params.blogid)
 	.exec(
 	    function(err, response) {
 		if(err) {

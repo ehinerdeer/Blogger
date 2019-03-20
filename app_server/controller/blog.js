@@ -86,14 +86,14 @@ var renderBlogList = function(req, res, responseBody) {
     res.render('bloglist' , {
 	title : 'Blog List',
 	pageHeader : 'Blog List',
-	blogs: responseBody
+	blogs: responseBody 
     });
 };
 
 /*GET BLOG EDIT PAGE*/
 module.exports.readOne = function(req , res) {
     var requestOptions, path;
-    path = "/api/blog/" + req.params.id;
+    path = "/api/blog/" + req.params.blogid;
     requestOptions = {
 	url : apiOptions.server + path,
 	method : "GET",
@@ -102,26 +102,32 @@ module.exports.readOne = function(req , res) {
     request(
 	requestOptions,
 	function(err, response, body) {
-	    renderBlogEdit(req, res, body);
+	    if(err){
+		console.log(err);
+	    }else {
+                console.log(response.statusCode);
+		renderBlogEdit(req, res, body);
+            }
 	}
     );
 };
 
 /*Render BLOG EDIT PAGE */
-var renderBlogEdit = function(req, res, responseBody) {
+var renderBlogEdit = function(req, res, blogData) {
     res.render('blogedit' , {
-	title: 'Blog Info',
+	title: 'Edit Blog',
 	pageHeader: {
-	    title: 'Blog Info'
+	    title: 'Edit Blog'
 	},
-	blog : responseBody
-    })
+	blogData : blogData,
+	blogTitle : blogData.blogTitle,
+	blogText : blogData.blogText
+    });
 };
 /*Blog Edit Post*/
 module.exports.editPost = function(req, res) {
     var requestOptions, path, postdata;
-    var id = req.params.id;
-    path = '/api/blog/' + id;
+    path = '/api/blog/' + req.params.blogid;
 
     postdata = {
 	blogTitle: req.body.blogTitle,
@@ -153,7 +159,7 @@ module.exports.editPost = function(req, res) {
 /*BLOG DELETE*/
 module.exports.del = function(req, res) {
     var requestOptions, path;
-    path = '/api/blog/' + req.params.id;
+    path = '/api/blog/' + req.params.blogid;
     requestOptions = {
 	url : apiOptions.server + path,
 	method : "GET",

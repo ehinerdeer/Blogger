@@ -25,6 +25,7 @@
      </nav>
     <body>
         <h1><%= title %></h1>
+        <div class="card border-dark" style="width:50%;">
 	<form method="post" action="/blogdelete/<%= blogData._id %>" style="width: 50%;">
 	  <div class="form-group">
 	    <label style="width: 100%;">
@@ -35,12 +36,13 @@
 	  <div class="form-group">
 	    <label style="width: 100%;">
 	      Blog Text
-	      <textarea class="form-control" id="blogText" name="blogText" rows="5" value="<%= blogData.blogText %>" readonly></textarea>
+	      <input class="form-control" id="blogText" name="blogText" rows="5" value="<%= blogData.blogText %>" readonly></textarea>
 	      <div class="text-right">
 		<input class="btn btn-danger" value="Delete Post" type="submit">
 	      </div>
 	  </div>
 	</form>
+	</div>
 </div>
 
     </body>

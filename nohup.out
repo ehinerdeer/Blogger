@@ -994,3 +994,8 @@ Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
 [0mGET /stylesheets/style.css [36m304 [0m0.320 ms - -[0m
 [0mGET /blogadd [32m200 [0m0.824 ms - 2181[0m
 [0mGET /stylesheets/style.css [36m304 [0m0.254 ms - -[0m
+
+> blogger@0.0.0 start /home/bitnami/lab4
+> node ./bin/www
+
+Mongoose is Connected to mongodb://blog:blog@localhost:27017/tasks

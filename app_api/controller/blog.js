@@ -90,8 +90,7 @@ module.exports.editOne = function(req, res) {
     blogSch
 	.findOneAndUpdate(
 	    { _id: req.params.blogid },
-	    { $set: {"blogTitle" : req.body.blogTitle }},
-            { $set: {"blogText" : req.body.blogText }},
+	    { $set: {"blogTitle" : req.body.blogTitle ,"blogText" : req.body.blogText }},
 	
 	    function(err, response) {
 		if(err) {

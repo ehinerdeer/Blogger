@@ -113,9 +113,6 @@ module.exports.readOne = function(req , res) {
 var renderBlogEdit = function(req, res, blogData) {
     res.render('blogedit' , {
 	title: 'Edit Blog',
-	pageHeader: {
-	    title: 'Edit Blog'
-	},
 	blogData : blogData,
 	blogid : blogData._id,
 	blogTitle : blogData.blogTitle,
@@ -148,11 +145,6 @@ module.exports.editPost = function(req, res) {
 	}
     );
 };
-
-/*OLD RENDER EDIT CODE
-    res.render('blogedit' , {
-	title: 'Edit Your Blog' });
-};*/
 
 /* GET BLOG TO  DELETE*/
 module.exports.del = function(req, res) {
@@ -207,8 +199,3 @@ module.exports.deletePost = function(req, res) {
 	}
     );
 };
-/*OLD DELETE CODE
-module.exports.blogdelete = function(req , res) {
-    res.render('blogdelete', {
-	title: 'Blog Deleted' });
-}; */

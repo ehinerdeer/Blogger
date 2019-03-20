@@ -180,7 +180,7 @@ var renderDeletePage = function(req, res, responseBody) {
 	pageHeader: {
 	    title : 'Delete Blog'
 	},
-	blog: responseBody
+	blogData: responseBody
     });
 };
 

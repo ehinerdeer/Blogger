@@ -21,10 +21,28 @@
 	<li class = "nav-item active">
 	  <a class = "nav-link" href="/blogadd">Add A Blog</a>
 	</li>
+      </ul>
      </nav>
     <body>
         <h1><%= title %></h1>
-	<p>This is currently under contruction</p>
+	<form method="delete" action="/blogdelete/<%= blogData.blogid %>" style="width: 50%;">
+	  <div class="form-group">
+	    <label style="width: 100%;">
+	      Blog Title
+	      <input class="form-control" id="blogTitle" name="blogTitle" type="text" value="<%= blogData.blogText %>" readonly>
+	  </div>
+
+	  <div class="form-group">
+	    <label style="width: 100%;">
+	      Blog Text
+	      <textarea class="form-control" id="blogText" name="blogText" rows="5" value="<%= blogData.blogText %>" readonly></textarea>
+	      <div class="text-right">
+		<input class="btn btn-danger float-right" value="Delete Post" type="submit">
+	      </div>
+	  </div>
+	</form>
+</div>
+
     </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-\

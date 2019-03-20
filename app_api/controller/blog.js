@@ -30,6 +30,7 @@ var buildBlogList = function(req, res, results) {
     var blogs = [];
     results.forEach(function (obj) {
 	blogs.push({
+	    blogid : obj._id,
 	    blogTitle : obj.blogTitle,
 	    blogText : obj.blogText,
 	    createdDate : obj.createdDate

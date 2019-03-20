@@ -609,3 +609,289 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 
 npm ERR! A complete log of this run can be found in:
 npm ERR!     /home/bitnami/.npm/_logs/2019-03-18T14_59_41_888Z-debug.log
+
+> blogger@0.0.0 start /home/bitnami/lab4
+> node ./bin/www
+
+Mongoose is Connected to mongodb://blog:blog@localhost:27017/tasks
+[0mGET / [36m304 [0m11.004 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.708 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m32.917 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m48.873 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.409 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m5.885 ms - 83[0m
+200
+[0mGET /blogedit/5c8ffb2bf27420400934fa86 [36m304 [0m11.007 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.295 ms - -[0m
+[0mPOST /blogedit/ [33m404 [0m2.019 ms - 1406[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.814 ms - -[0m
+[0mGET / [36m304 [0m2.941 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.289 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.933 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m8.215 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.320 ms - -[0m
+[0mGET /blogadd [32m200 [0m1.865 ms - 2181[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.360 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.673 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m8.123 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.318 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m2.600 ms - 83[0m
+200
+[0mGET /blogedit/5c8ffb2bf27420400934fa86 [32m200 [0m6.232 ms - 2160[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.328 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.532 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m7.125 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.298 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m2.287 ms - 83[0m
+[0mGET /blogdelete/5c8ffb2bf27420400934fa86 [36m304 [0m7.334 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.279 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.613 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m7.230 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.277 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m2.286 ms - 83[0m
+200
+[0mGET /blogedit/5c8ffb2bf27420400934fa86 [36m304 [0m6.598 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.274 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.340 ms - -[0m
+[0mGET / [32m200 [0m0.817 ms - 1678[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.820 ms - 806[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.660 ms - 806[0m
+[0mGET /favicon.ico [33m404 [0m1.271 ms - 1411[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.502 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [32m200 [0m6.861 ms - 10508[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.435 ms - 806[0m
+[0mGET /blogadd [32m200 [0m1.052 ms - 2181[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.460 ms - 806[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.532 ms - 806[0m

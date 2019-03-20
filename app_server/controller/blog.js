@@ -120,6 +120,7 @@ var renderBlogEdit = function(req, res, blogData) {
 	    title: 'Edit Blog'
 	},
 	blogData : blogData,
+	blogid : blogData._id,
 	blogTitle : blogData.blogTitle,
 	blogText : blogData.blogText
     });
@@ -180,7 +181,8 @@ var renderDeletePage = function(req, res, responseBody) {
 	pageHeader: {
 	    title : 'Delete Blog'
 	},
-	blogData: responseBody
+	blogData: responseBody,
+	blogid: blogData._id,
     });
 };
 

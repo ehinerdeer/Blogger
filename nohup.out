@@ -182,3 +182,820 @@
 [0mGET /stylesheets/style.css [36m304 [0m0.282 ms - -[0m
 [0mGET / [36m304 [0m0.840 ms - -[0m
 [0mGET /stylesheets/style.css [36m304 [0m0.274 ms - -[0m
+[0mGET / [36m304 [0m0.738 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.294 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.804 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.236 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.700 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.300 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.857 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.313 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.691 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.234 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.708 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.233 ms - -[0m
+[0mGET / [36m304 [0m0.782 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.279 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.728 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.222 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.812 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.275 ms - -[0m
+[0mGET /bloglist [36m304 [0m1.002 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.311 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.987 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.827 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.753 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.318 ms - -[0m
+[0mGET / [36m304 [0m0.699 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.224 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.678 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.242 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.686 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.252 ms - -[0m
+[0mGET / [32m200 [0m0.967 ms - 389[0m
+[0mGET / [32m200 [0m0.714 ms - 389[0m
+[0mGET / [32m200 [0m2.030 ms - 389[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.443 ms - 399[0m
+[0mGET /favicon.ico [33m404 [0m1.512 ms - 906[0m
+[0mGET /bloglist [32m200 [0m0.863 ms - 362[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.323 ms - -[0m
+[0mGET /blogadd [32m200 [0m0.696 ms - 373[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.276 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.768 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.268 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.790 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.249 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.800 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.325 ms - -[0m
+[0mGET / [36m304 [0m0.712 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.244 ms - -[0m
+[0mGET / [32m200 [0m20.791 ms - 389[0m
+[0mGET / [32m200 [0m0.733 ms - 389[0m
+[0mGET / [32m200 [0m0.688 ms - 389[0m
+[0mGET / [32m200 [0m0.867 ms - 389[0m
+[0mGET / [32m200 [0m7.216 ms - 389[0m
+[0mGET /index.php [33m404 [0m1.797 ms - 906[0m
+[0mGET /phpmyadmin/index.php [33m404 [0m0.858 ms - 906[0m
+[0mGET /index.php [33m404 [0m0.789 ms - 906[0m
+[0mGET /phpmyadmin/index.php [33m404 [0m0.862 ms - 906[0m
+[0mGET / [32m200 [0m0.743 ms - 389[0m
+[0mGET / [32m200 [0m0.664 ms - 389[0m
+[0mGET / [32m200 [0m0.811 ms - 389[0m
+[0mGET / [32m200 [0m0.689 ms - 389[0m
+
+> blogger@0.0.0 start /home/bitnami/lab3
+> node ./bin/www
+
+(node:26576) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose is Connected to mongodb://localhost/blogger
+[0mGET /bloglist [36m304 [0m11.456 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.300 ms - -[0m
+[0mGET / [36m304 [0m1.623 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.327 ms - -[0m
+[0mGET /bloglist [36m304 [0m1.441 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.240 ms - -[0m
+[0mGET /blogadd [36m304 [0m1.001 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.305 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.918 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.269 ms - -[0m
+[0mGET / [36m304 [0m1.014 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.269 ms - -[0m
+[0mGET /bloglist [36m304 [0m1.338 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.543 ms - -[0m
+[0mGET /blogadd [36m304 [0m1.341 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.293 ms - -[0m
+[0mGET / [36m304 [0m1.377 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.495 ms - -[0m
+[0mGET / [36m304 [0m1.024 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.449 ms - -[0m
+[0mGET /bloglist [36m304 [0m1.081 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.372 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.768 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.308 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.928 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.959 ms - -[0m
+[0mGET / [36m304 [0m0.758 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.276 ms - -[0m
+[0mGET / [36m304 [0m0.772 ms - -[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.458 ms - 710[0m
+[0mGET /favicon.ico [33m404 [0m1.487 ms - 1411[0m
+[0mGET /bloglist [32m200 [0m1.157 ms - 919[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.309 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.790 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.261 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.907 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.362 ms - -[0m
+[0mGET / [36m304 [0m0.795 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.358 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.745 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.404 ms - -[0m
+[0mGET / [32m200 [0m0.827 ms - 389[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.748 ms - 710[0m
+[0mGET / [32m200 [0m1.325 ms - 389[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.498 ms - 710[0m
+[0mGET /favicon.ico [33m404 [0m1.075 ms - 1411[0m
+[0mGET /bloglist [32m200 [0m1.009 ms - 919[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.293 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.643 ms - 1411[0m
+[0mGET /blogadd [32m200 [0m0.816 ms - 373[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.255 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.776 ms - 1411[0m
+[0mGET /bloglist [36m304 [0m0.931 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.351 ms - -[0m
+[0mGET / [36m304 [0m0.764 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.237 ms - -[0m
+[0mGET / [32m200 [0m4.169 ms - 389[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.559 ms - 710[0m
+[0mGET /favicon.ico [33m404 [0m1.409 ms - 1411[0m
+[0mGET /bloglist [32m200 [0m2.442 ms - 919[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.645 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.772 ms - 1411[0m
+[0mGET / [36m304 [0m0.781 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.277 ms - -[0m
+[0mGET /bloglist [36m304 [0m1.467 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.244 ms - -[0m
+[0mGET /blogadd [32m200 [0m1.406 ms - 373[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.250 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.636 ms - 1411[0m
+[0mGET /bloglist [36m304 [0m0.971 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.257 ms - -[0m
+[0mGET / [36m304 [0m0.771 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.249 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.927 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.284 ms - -[0m
+[0mGET / [36m304 [0m0.767 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.269 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.965 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.277 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.774 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.216 ms - -[0m
+[0mGET /bloglist [36m304 [0m1.371 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.223 ms - -[0m
+[0mGET / [36m304 [0m0.730 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.268 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.911 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.268 ms - -[0m
+[0mGET / [36m304 [0m0.824 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.240 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.715 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.239 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.949 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.243 ms - -[0m
+[0mGET / [32m200 [0m1.270 ms - 389[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.419 ms - 710[0m
+[0mGET /favicon.ico [33m404 [0m0.798 ms - 1411[0m
+[0mGET /bloglist [32m200 [0m0.929 ms - 919[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.288 ms - -[0m
+[0mGET / [32m200 [0m0.721 ms - 389[0m
+[0mGET / [32m200 [0m0.747 ms - 389[0m
+[0mGET / [32m200 [0m0.796 ms - 389[0m
+[0mGET / [32m200 [0m0.735 ms - 389[0m
+[0mGET /bloglist [36m304 [0m0.889 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.317 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.891 ms - 1411[0m
+[0mGET / [36m304 [0m0.744 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.342 ms - -[0m
+[0mGET / [36m304 [0m0.667 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.270 ms - -[0m
+[0mPOST /login [33m404 [0m45.807 ms - 1406[0m
+[0mPOST /login [33m404 [0m1.123 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.936 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.887 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.872 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.868 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.931 ms - 1406[0m
+[0mPOST /login [33m404 [0m5.173 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.843 ms - 1406[0m
+[0mPOST /login [33m404 [0m1.601 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.865 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.829 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.783 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.791 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.770 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.826 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.888 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.851 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.903 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.743 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.835 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.784 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.844 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.914 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.793 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.728 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.733 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.819 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.768 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.799 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.796 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.840 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.878 ms - 1406[0m
+[0mPOST /login [33m404 [0m1.341 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.781 ms - 1406[0m
+[0mPOST /login [33m404 [0m0.796 ms - 1406[0m
+[0mGET / [32m200 [0m0.652 ms - 389[0m
+[0mGET / [32m200 [0m21.206 ms - 389[0m
+[0mGET / [32m200 [0m1.922 ms - 389[0m
+[0mGET /mysql/admin/index.php?lang=en [33m404 [0m1.576 ms - 1411[0m
+[0mGET / [36m304 [0m12.882 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.991 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m4.830 ms - 1411[0m
+[0mGET /mysql/admin/index.php?lang=en [33m404 [0m0.839 ms - 1411[0m
+[0mGET / [32m200 [0m0.722 ms - 389[0m
+[0mGET /index.action [33m404 [0m0.847 ms - 1411[0m
+[0mGET / [32m200 [0m0.717 ms - 389[0m
+[0mGET / [32m200 [0m0.801 ms - 389[0m
+[0mGET / [32m200 [0m0.724 ms - 389[0m
+[0mGET / [32m200 [0m1.519 ms - 389[0m
+[0mGET / [32m200 [0m0.670 ms - 389[0m
+[0mPOST /sdk [33m404 [0m1.363 ms - 1406[0m
+[0mGET / [32m200 [0m1.394 ms - 389[0m
+[0mGET /nmaplowercheck1550970052 [33m404 [0m1.843 ms - 1411[0m
+[0mGET /HNAP1 [33m404 [0m0.840 ms - 1411[0m
+[0mGET / [32m200 [0m0.526 ms - 389[0m
+[0mGET /evox/about [33m404 [0m0.753 ms - 1411[0m
+[0mGET / [32m200 [0m0.669 ms - 389[0m
+[0mGET /mysql/admin/index.php?lang=en [33m404 [0m0.829 ms - 1411[0m
+[0mGET / [32m200 [0m0.726 ms - 389[0m
+[0mGET / [32m200 [0m4.360 ms - 389[0m
+[0mGET / [32m200 [0m1.424 ms - 389[0m
+[0mGET /v1/agent/self [33m404 [0m2.158 ms - 1411[0m
+[0mGET / [32m200 [0m0.733 ms - 389[0m
+[0mGET / [32m200 [0m0.715 ms - 389[0m
+[0mGET / [32m200 [0m0.693 ms - 389[0m
+[0mGET / [32m200 [0m0.726 ms - 389[0m
+[0mGET /ftp/ [33m404 [0m2.710 ms - 1411[0m
+[0mGET /tftp/ [33m404 [0m0.701 ms - 1411[0m
+[0mGET /tftpboot/ [33m404 [0m0.617 ms - 1411[0m
+[0mGET /tftproot/ [33m404 [0m0.695 ms - 1411[0m
+[0mGET /tftpphone/ [33m404 [0m1.307 ms - 1411[0m
+[0mGET / [32m200 [0m0.798 ms - 389[0m
+[0mGET / [36m304 [0m0.691 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m4.296 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.876 ms - 1411[0m
+[0mGET / [32m200 [0m0.660 ms - 389[0m
+[0mGET /apple-touch-icon-precomposed.png [33m404 [0m0.601 ms - 1411[0m
+[0mGET /apple-touch-icon.png [33m404 [0m0.604 ms - 1411[0m
+[0mGET /favicon.ico [33m404 [0m1.271 ms - 1411[0m
+[0mGET / [32m200 [0m0.750 ms - 389[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.359 ms - -[0m
+[0mGET / [36m304 [0m0.716 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.250 ms - -[0m
+[0mGET /bloglist [36m304 [0m2.449 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.299 ms - -[0m
+[0mGET /blogadd [32m200 [0m1.398 ms - 373[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.262 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.902 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.711 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.738 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.282 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.842 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.288 ms - -[0m
+[0mGET / [32m200 [0m0.720 ms - 389[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.620 ms - 710[0m
+[0mGET /favicon.ico [33m404 [0m0.815 ms - 1411[0m
+[0mGET / [32m200 [0m0.719 ms - 389[0m
+[0mGET / [36m304 [0m0.741 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.309 ms - -[0m
+[0mGET /bloglist [32m200 [0m0.931 ms - 919[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.365 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.888 ms - 1411[0m
+[0mGET /blogadd [32m200 [0m0.724 ms - 373[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.327 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.858 ms - 1411[0m
+[0mGET /bloglist [36m304 [0m1.535 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.368 ms - -[0m
+[0mGET / [36m304 [0m0.785 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.248 ms - -[0m
+[0mGET / [32m200 [0m0.776 ms - 389[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.231 ms - -[0m
+[0mGET / [36m304 [0m0.741 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.231 ms - -[0m
+[0mGET /bloglist [36m304 [0m0.843 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.249 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.743 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.246 ms - -[0m
+[0mGET / [32m200 [0m6.564 ms - 389[0m
+[0mGET /robots.txt [33m404 [0m1.528 ms - 1411[0m
+[0mGET /sitemap.xml [33m404 [0m0.892 ms - 1411[0m
+[0mGET /.well-known/security.txt [33m404 [0m4.163 ms - 1411[0m
+[0mGET /favicon.ico [33m404 [0m0.837 ms - 1411[0m
+[0mGET / [32m200 [0m0.711 ms - 389[0m
+[0mGET /upgrade_handle.php?cmd=getupgradinginfo [33m404 [0m0.849 ms - 1411[0m
+[0mGET /bloglist [36m304 [0m2.518 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.257 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.849 ms - 1411[0m
+[0mGET / [32m200 [0m0.713 ms - 389[0m
+[0mGET / [32m200 [0m0.756 ms - 389[0m
+[0mGET / [32m200 [0m0.721 ms - 389[0m
+[0mGET / [32m200 [0m0.697 ms - 389[0m
+
+> blogger@0.0.0 start /home/bitnami/lab4
+> node ./bin/www
+
+(node:11915) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose is Connected to mongodb://tasks:tasks@localhost:27017/?authMechanism=SCRAM-SHA-1&authSource=tasks
+[0mGET /blogadd [36m304 [0m11.531 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.381 ms - -[0m
+[0mGET / [36m304 [0m1.780 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.375 ms - -[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m22.392 ms - 29[0m
+[0mGET /bloglist [31m500 [0m39.669 ms - 1647[0m
+[0mGET /blogadd [36m304 [0m1.064 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.369 ms - -[0m
+[0mGET /blogadd [36m304 [0m1.043 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.277 ms - -[0m
+[0mGET / [36m304 [0m1.158 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.278 ms - -[0m
+[0mGET /blogadd [36m304 [0m1.312 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.281 ms - -[0m
+[0mGET / [36m304 [0m0.821 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.272 ms - -[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m2.539 ms - 29[0m
+[0mGET /bloglist [31m500 [0m7.648 ms - 1647[0m
+Killed
+npm ERR! code ELIFECYCLE
+npm ERR! errno 137
+npm ERR! blogger@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 137
+npm ERR! 
+npm ERR! Failed at the blogger@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/bitnami/.npm/_logs/2019-03-18T01_37_01_565Z-debug.log
+
+> blogger@0.0.0 start /home/bitnami/lab4
+> node ./bin/www
+
+(node:12311) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose is Connected to mongodb://tasks:tasks@localhost:27017/?authMechanism=SCRAM-SHA-1&authSource=tasks
+[0mGET /blogadd [36m304 [0m11.790 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.605 ms - -[0m
+[0mGET /blogadd [36m304 [0m1.560 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.397 ms - -[0m
+[0mGET /blogadd [36m304 [0m0.867 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.264 ms - -[0m
+[0mGET / [32m200 [0m68.067 ms - 1678[0m
+[0mGET /stylesheets/style.css [32m200 [0m5.180 ms - 806[0m
+[0mGET /favicon.ico [33m404 [0m4.634 ms - 1411[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m95.702 ms - 29[0m
+[0mGET /bloglist [31m500 [0m130.781 ms - 1647[0m
+[0mGET /blogadd [32m200 [0m1.606 ms - 2064[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.637 ms - -[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m2.468 ms - 29[0m
+[0mGET /bloglist [31m500 [0m7.412 ms - 1647[0m
+[0mGET /?fbclid=IwAR2zhc22qy5qjIMRHOMGAr2-GscXxj0ZflEkBCm9Ev4rx4CZhZbt92MtYt4 [32m200 [0m1.035 ms - 1678[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.258 ms - 806[0m
+[0mGET /favicon.ico [33m404 [0m0.945 ms - 1411[0m
+[0mGET / [32m200 [0m0.777 ms - 1678[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.335 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.910 ms - 1411[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m1.553 ms - 29[0m
+[0mGET /bloglist [31m500 [0m5.060 ms - 1647[0m
+[0mGET /blogadd [32m200 [0m0.787 ms - 2064[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.263 ms - -[0m
+{ blogTitle: 'test', blogText: 'test' }
+(node:12311) UnhandledPromiseRejectionWarning: MongoError: not authorized on admin to execute command { insert: "myblogs", ordered: true, lsid: { id: UUID("f6825c22-aff9-4598-923d-129c4488ec94") }, $db: "admin" }
+    at /home/bitnami/lab4/node_modules/mongodb-core/lib/connection/pool.js:581:63
+    at authenticateStragglers (/home/bitnami/lab4/node_modules/mongodb-core/lib/connection/pool.js:504:16)
+    at Connection.messageHandler (/home/bitnami/lab4/node_modules/mongodb-core/lib/connection/pool.js:540:5)
+    at emitMessageHandler (/home/bitnami/lab4/node_modules/mongodb-core/lib/connection/connection.js:310:10)
+    at Socket.<anonymous> (/home/bitnami/lab4/node_modules/mongodb-core/lib/connection/connection.js:453:17)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:597:20)
+(node:12311) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:12311) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[0mPOST /blog/blogadd/ [0m- [0m- ms - -[0m
+Getting blog list
+[0mGET /api/blog [33m404 [0m1.627 ms - 29[0m
+Finding blogs { blogid: '1234' }
+[0mGET /api/blog/1234 [31m500 [0m1.680 ms - 1538[0m
+[0mPOST /api/blog/ [0m- [0m- ms - -[0m
+/home/bitnami/lab4/app_server/controller/blog.js:37
+	    if(response.statusCode === 201) {
+	                ^
+
+TypeError: Cannot read property 'statusCode' of undefined
+    at Request._callback (/home/bitnami/lab4/app_server/controller/blog.js:37:18)
+    at self.callback (/home/bitnami/lab4/node_modules/request/request.js:185:22)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at Request.onRequestError (/home/bitnami/lab4/node_modules/request/request.js:881:8)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at Socket.socketOnEnd (_http_client.js:423:9)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! blogger@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the blogger@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/bitnami/.npm/_logs/2019-03-18T14_59_41_888Z-debug.log
+
+> blogger@0.0.0 start /home/bitnami/lab4
+> node ./bin/www
+
+Mongoose is Connected to mongodb://blog:blog@localhost:27017/tasks
+[0mGET / [36m304 [0m11.004 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.708 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m32.917 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m48.873 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.409 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m5.885 ms - 83[0m
+200
+[0mGET /blogedit/5c8ffb2bf27420400934fa86 [36m304 [0m11.007 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.295 ms - -[0m
+[0mPOST /blogedit/ [33m404 [0m2.019 ms - 1406[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.814 ms - -[0m
+[0mGET / [36m304 [0m2.941 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.289 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.933 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m8.215 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.320 ms - -[0m
+[0mGET /blogadd [32m200 [0m1.865 ms - 2181[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.360 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.673 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m8.123 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.318 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m2.600 ms - 83[0m
+200
+[0mGET /blogedit/5c8ffb2bf27420400934fa86 [32m200 [0m6.232 ms - 2160[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.328 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.532 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m7.125 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.298 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m2.287 ms - 83[0m
+[0mGET /blogdelete/5c8ffb2bf27420400934fa86 [36m304 [0m7.334 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.279 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.613 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m7.230 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.277 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m2.286 ms - 83[0m
+200
+[0mGET /blogedit/5c8ffb2bf27420400934fa86 [36m304 [0m6.598 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.274 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.340 ms - -[0m
+[0mGET / [32m200 [0m0.817 ms - 1678[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.820 ms - 806[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.660 ms - 806[0m
+[0mGET /favicon.ico [33m404 [0m1.271 ms - 1411[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.502 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [32m200 [0m6.861 ms - 10508[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.435 ms - 806[0m
+[0mGET /blogadd [32m200 [0m1.052 ms - 2181[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.460 ms - 806[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.532 ms - 806[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.530 ms - 806[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.592 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [32m200 [0m6.936 ms - 10508[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.399 ms - -[0m
+[0mGET / [32m200 [0m0.784 ms - 1678[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.350 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.372 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m2.240 ms - 83[0m
+200
+[0mGET /blogedit/5c8ffb2bf27420400934fa86 [32m200 [0m5.396 ms - 2160[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.261 ms - -[0m
+Getting blog list
+[ { _id: 5c8ffb2bf27420400934fa86,
+    createdDate: 2019-03-18T20:10:19.907Z,
+    __v: 0 },
+  { _id: 5c902242ac44ea4a9bf0a2eb,
+    createdDate: 2019-03-18T22:57:06.094Z,
+    __v: 0 },
+  { _id: 5c9026e1d6ad4c4caccdaddc,
+    createdDate: 2019-03-18T23:16:49.592Z,
+    __v: 0 },
+  { _id: 5c913a31752b7060f8bfc54e,
+    createdDate: 2019-03-19T18:51:29.729Z,
+    __v: 0 },
+  { _id: 5c913ab3b9fb476168f0618d,
+    createdDate: 2019-03-19T18:53:39.397Z,
+    __v: 0 },
+  { _id: 5c915233e9e20f66660d04c3,
+    createdDate: 2019-03-19T20:33:55.039Z,
+    __v: 0 },
+  { _id: 5c91534a378c3166a60cdc88,
+    createdDate: 2019-03-19T20:38:34.532Z,
+    __v: 0 },
+  { _id: 5c915a347452686833258e14,
+    createdDate: 2019-03-19T21:08:04.671Z,
+    __v: 0 },
+  { _id: 5c915bccdce86768b1944bcc,
+    blogTitle: 'title',
+    blogText: 'text',
+    createdDate: 2019-03-19T21:14:52.703Z,
+    __v: 0 },
+  { _id: 5c915cacb0290268e93467ce,
+    blogTitle: 'please ',
+    blogText: 'work',
+    createdDate: 2019-03-19T21:18:36.724Z,
+    __v: 0 } ]
+[0mGET /api/blog [32m200 [0m3.650 ms - 869[0m
+Blogs Found: 10
+[0mGET /bloglist [36m304 [0m7.032 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.256 ms - -[0m
+Finding blogs { blogid: '5c8ffb2bf27420400934fa86' }
+{ _id: 5c8ffb2bf27420400934fa86,
+  createdDate: 2019-03-18T20:10:19.907Z,
+  __v: 0 }
+[0mGET /api/blog/5c8ffb2bf27420400934fa86 [32m200 [0m2.216 ms - 83[0m
+[0mGET /blogdelete/5c8ffb2bf27420400934fa86 [32m200 [0m6.735 ms - 2161[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.320 ms - -[0m
+[0mGET /blogadd [32m200 [0m0.824 ms - 2181[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.254 ms - -[0m
+
+> blogger@0.0.0 start /home/bitnami/lab4
+> node ./bin/www
+
+Mongoose is Connected to mongodb://blog:blog@localhost:27017/tasks
